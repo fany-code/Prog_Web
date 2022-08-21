@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: orange;
+    background-color: #111;
 }
 
 .login-page {
@@ -50,7 +50,7 @@ body {
 
 .login-form input:focus {
     outline: none;
-    border-color: orange;
+    border-color: rgb(223, 186, 0);
 }
 
 .login-form button {
