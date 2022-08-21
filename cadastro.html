@@ -19,23 +19,23 @@
             <li><a href="login.html">Logout</a></li>
         </ul>
     </div>
-    <form action="./hospedes.html" method="post">
+    <form>
         <h1>CREATE NEW GUEST</h1>
         <label for="first-name">First Name</label>
-        <input type="text" name="first-name">
+        <input type="text" name="first-name" required>
         <label for="last-name">Last Name</label>
-        <input type="text" name="last-name">
+        <input type="text" name="last-name" required>
         <label for="email">Email Address</label>
         <input type="email" name="email">
-        <label for="phone">Phone Number [ex: 1900000-0000]</label>
-        <input type="tel" name="phone" pattern="[0-9]{2}[0-9]{5}-[0-9]{4}" maxlength="14">
+        <label for="phone">Phone Number [ex: (19) 00000-0000]</label>
+        <input type="tel" name="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" maxlength="15">
         <label for="address">Address</label>
         <input type="text" name="address">
         <label for="state">State</label>
-        <input type="text" name="state">
+        <input type="text" name="state" required>
         <label for="country">Country</label>
-        <input type="text" name="country">
-        <button><a href="./hospedes.html">SAVE</a></button>
+        <input type="text" name="country" required>
+        <button formaction="./hospedes.html">SAVE</button>
     </form>
     </body>
 </html>
